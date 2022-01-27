@@ -1,31 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>The Compound Professor</title> 
-    </head>
-    <body>
-        <div class="prof-screen">
-            <p class="ideal-compounding-interval prof-screen-box">
-                Ideal compounding interval: to be computed
-            </p>
-            <p class="apy prof-screen-box">
-                Optimized APY:
-            </p>
-            <p class="pair prof-screen-box">
-                Pair:
-            </p>
-            <p class="apr prof-screen-box">
-                Current APR:
-            </p>
-            <p class="principal prof-screen-box">
-                Current Principal:
-            </p>
-            <p class="principal-value prof-screen-box">
-                Current Principal:
-            </p>
-        </div>
-        
-        <script src="script.js"></script>
-    </body>
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="style.css">
+    <title>Compound Professor</title>
+    <script defer src="script.js"></script>
+  </head>
+  
+  <body>
+    
+    <header>
+        <nav>
+            <ul>
+                <!-- <li><a href="#"">Link 3</a></li> -->
+                <li><a href="#">How to Use</a></li>
+                <!-- <li><a class="active" href="#">Home</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Compound Professor</h1>
+    <h3>Maximizing returns through the power of math.</h3>
+    
+    <div class="prof-screen big-screen">
+        <p class="optimal-compounding-interval-box prof-screen-box">
+            Optimal Compounding Interval:&nbsp<span class="optimal" id="optimal-compounding-interval">to be computed</span>
+        </p>
+        <p class="apy prof-screen-box">
+            Optimized APY:&nbsp<span class="optimal" id="optimal-apy">to be computed</span>
+        </p>
+        <p class="principal prof-screen-box">
+            Current Principal:&nbsp<input class="input-number" id="principal" type="number" min="0.01" placeholder="1000.00" step="0.01" required>
+        </p>
+        <p class="apr prof-screen-box">
+            Current APR(%):&nbsp<input class="input-number" id="apr" type="number" min="0.01" placeholder="10.00" step="0.01" required>
+        </p>
+        <p class="principal prof-screen-box">
+            Anticipated Timeframe (years):&nbsp<input class="input-number" id="timeframe" type="number" min="0.01" placeholder="1" step="0.01" required>
+        </p>
+        <p class="cost-box prof-screen-box">
+            Cost per compounding:&nbsp<input class="input-number" id="cost" type="number" min="0.01" placeholder=".50" step="0.01" required>
+        </p>
+        <p class="calculate-box prof-screen-box">
+            <button class="btn btn-calc">Calculate</button>
+            <button class="btn btn-clear">Clear</button>
+        </p>
+    </div>
+    
+    <p class="results-msg big-screen">
+
+    </p>
+    
+    <footer>
+        <a href="https://github.com/0xdebaser/Compound-Professor.git" target="blank"><img src="GitHub-Mark-Light-64px.png" alt="GitHub mark"> </a> 
+    </footer>
+    
+  </body>
 </html>

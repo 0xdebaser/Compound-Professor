@@ -1,9 +1,71 @@
+:root {
+    --main-disp-color: #66FF66;
+    --secondary-disp-color: hotpink;
+}
+
+
+
 body {
-    
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
+    color: var(--main-disp-color);
+}
+
+footer {
+    margin-top: 100px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: var(--secondary-disp-color);
 }
 
 html {
     background: linear-gradient(#19181A, #2D2A2E) no-repeat center center fixed;
+}
+
+input[type=number] {
+    border: none;
+    background-color: #19181A;
+    color: var(--secondary-disp-color);
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
+    padding: 10px 0px 10px 0px;
+    text-align: right;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: var(--secondary-disp-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--secondary-disp-color);
+    color: #19181A;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.active {
+    background-color: var(--secondary-disp-color);
+    color: #19181A;
+    font-weight: bold;
 }
 
 .apr {
@@ -14,11 +76,61 @@ html {
 .apy {
     grid-column-start: 1;
     grid-column-end: span 4;
+    font-size: 1.25em;
 }
 
-.ideal-compounding-interval {
+.btn {
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 #19181A;
+    font-family: 'Orbitron', 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    width: 200px;
+    margin: 0px 10px;
+}
+
+.btn-calc {
+    background-color: var(--main-disp-color);
+}
+
+.btn-clear {
+    background-color: var(--secondary-disp-color);
+}
+
+.btn:active {
+    box-shadow: 0 4px 12px 0 #19181A;
+    transform: translateY(4px);
+}
+
+.calculate-box {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+.cost-box {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+}
+
+/* .input-number {
+    background-color: none;
+    color: var(--main-disp-color)
+} */
+
+.emphasis {
+    color: var(--secondary-disp-color);
+    font-weight: bold;
+}
+
+.optimal {
+    font-weight: bold;
+    color: var(--secondary-disp-color);
+}
+
+.optimal-compounding-interval-box {
     grid-column-start: 1;
     grid-column-end: span 4;
+    font-size: 1.25em;
 }
 
 .pair {
@@ -38,9 +150,7 @@ html {
 
 .prof-screen {
     margin:auto;
-    background-color: hotpink;
-    color: black;
-    width: 67%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3px;
@@ -49,11 +159,42 @@ html {
 }
 
 .prof-screen-box {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid var(--main-disp-color);
+}
+
+.results-msg {
+    font-size: 1.25em;
+    text-align: justify;
+    margin: 35px auto;
+}
+
+#apr {
+    width: 25%;
+}
+
+#cost {
+    width: 15%;
+}
+
+#principal {
+    width: 40%;
+}
+
+#timeframe {
+    width: 20%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .big-screen {
+        
+        width: 67%;
+        
+    }
 }
