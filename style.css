@@ -69,7 +69,6 @@ ul {
 }
 
 .apr {
-    grid-column-start: 3;
     grid-column-end: span 2;
 }
 
@@ -93,7 +92,18 @@ ul {
     background-color: var(--main-disp-color);
 }
 
-.btn-clear {
+.btn-close {
+    background-color: var(--secondary-disp-color);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 0.75rem;
+    right: 2rem;
+    width: 100px;
+    font-size: 1em;
+}
+
+.btn-reset {
     background-color: var(--secondary-disp-color);
 }
 
@@ -122,6 +132,17 @@ ul {
     font-weight: bold;
 }
 
+.formula {
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .optimal {
     font-weight: bold;
     color: var(--secondary-disp-color);
@@ -136,6 +157,30 @@ ul {
 .pair {
     grid-column-start: 1;
     grid-column-end: span 2;
+}
+
+.plink:link, .plink:visited {
+    color: var(--secondary-disp-color);
+}
+
+.popup-body {
+    text-align: justify;
+    text-indent: 3em;
+    padding-left: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    border: 1px solid var(--main-disp-color);
+    background-color: #19181A;
+    width: 90%;
+    text-align: center;
 }
 
 .principal {
@@ -179,7 +224,7 @@ ul {
 }
 
 #cost {
-    width: 15%;
+    width: 40%;
 }
 
 #principal {
