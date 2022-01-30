@@ -8,6 +8,7 @@
 body {
     font-family: 'Orbitron', 'Courier New', Courier, monospace;
     color: var(--main-disp-color);
+    text-align: center;
 }
 
 footer {
@@ -135,7 +136,7 @@ ul {
 .formula {
     display: block;
     margin: auto;
-    width: 30%;
+    width: 45%;
 }
 
 .hidden {
@@ -179,8 +180,9 @@ ul {
     transition: all 0.5s;
     border: 1px solid var(--main-disp-color);
     background-color: #19181A;
-    width: 90%;
-    text-align: center;
+    width: 85%;
+    height:90%;
+    overflow: auto;
 }
 
 .principal {
